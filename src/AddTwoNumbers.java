@@ -3,7 +3,7 @@ import java.util.HashMap;
 public class AddTwoNumbers {
 
 	public static void main(String[] args) {
-		Solution s = new Solution();
+		SolutionAddTwoNumbers s = new SolutionAddTwoNumbers();
 		ListNode l1 = new ListNode(2);
 		l1.next = new ListNode(4);
 		l1.next.next = new ListNode(3);
@@ -30,7 +30,7 @@ class ListNode {
 	}
 }
 
-class Solution {
+class SolutionAddTwoNumbers {
 	public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 		HashMap<Integer, Integer> hm1 = listNodeToNumber(l1);
 		HashMap<Integer, Integer> hm2 = listNodeToNumber(l2);
