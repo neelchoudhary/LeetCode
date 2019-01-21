@@ -1,14 +1,5 @@
 import java.util.HashMap;
 
-public class TwoSum {
-	public static void main(String[] args) {
-		SolutionTwoSum s = new SolutionTwoSum();
-		for (int i = 0; i < 2; i++) {
-			System.out.print(s.twoSum(new int[] {2, 7, 11, 15}, 9)[i] + ", ");
-		}
-	}
-}
-
 class SolutionTwoSum {
 	// Solution using a HashMap.
 	// Time Complexity: T(n)
@@ -26,4 +17,14 @@ class SolutionTwoSum {
     	}
     	return new int[] {0, 0};
     }
+}
+
+
+public class TwoSum {
+  public static void main(String[] args) {
+    SolutionTwoSum s = new SolutionTwoSum();
+    for (int i = 0; i < 2; i++) {
+      System.out.print(s.twoSum(new int[] {2, 7, 11, 15}, 9)[i] + ", ");
+    }
+  }
 }

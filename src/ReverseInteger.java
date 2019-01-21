@@ -1,13 +1,5 @@
 import java.util.HashMap;
 
-public class ReverseInteger {
-	public static void main(String[] args) {
-		SolutionReverseInteger s = new SolutionReverseInteger();
-		System.out.println(s.reverse(-34));
-		System.out.println(Integer.MIN_VALUE);
-	}
-}
-
 class SolutionReverseInteger {
 	// Solution using HashMaps
 	// Time Complexity T(n)
@@ -42,4 +34,13 @@ class SolutionReverseInteger {
     	
     	return (0 > x) ? sum*-1 : sum;
     }
+}
+
+
+public class ReverseInteger {
+  public static void main(String[] args) {
+    SolutionReverseInteger s = new SolutionReverseInteger();
+    System.out.println(s.reverse(-34));
+    System.out.println(Integer.MIN_VALUE);
+  }
 }

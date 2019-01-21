@@ -1,26 +1,5 @@
 import java.util.HashMap;
 
-public class AddTwoNumbers {
-
-	public static void main(String[] args) {
-		SolutionAddTwoNumbers s = new SolutionAddTwoNumbers();
-		ListNode l1 = new ListNode(2);
-		l1.next = new ListNode(4);
-		l1.next.next = new ListNode(3);
-		ListNode l2 = new ListNode(5);
-		l2.next = new ListNode(6);
-		l2.next.next = new ListNode(4);
-		s.addTwoNumbers(l1, l2);
-		ListNode l3 = new ListNode(8);
-		l3.next = new ListNode(8);
-		l3.next.next = new ListNode(8);
-		ListNode l4 = new ListNode(8);
-		l4.next = new ListNode(8);
-		l4.next.next = new ListNode(8);
-		s.addTwoNumbers(l3, l4);
-	}
-}
-
 class ListNode {
 	int val;
 	ListNode next;
@@ -85,4 +64,26 @@ class SolutionAddTwoNumbers {
 
 		return result.next;
 	}
+}
+
+
+public class AddTwoNumbers {
+
+  public static void main(String[] args) {
+    SolutionAddTwoNumbers s = new SolutionAddTwoNumbers();
+    ListNode l1 = new ListNode(2);
+    l1.next = new ListNode(4);
+    l1.next.next = new ListNode(3);
+    ListNode l2 = new ListNode(5);
+    l2.next = new ListNode(6);
+    l2.next.next = new ListNode(4);
+    s.addTwoNumbers(l1, l2);
+    ListNode l3 = new ListNode(8);
+    l3.next = new ListNode(8);
+    l3.next.next = new ListNode(8);
+    ListNode l4 = new ListNode(8);
+    l4.next = new ListNode(8);
+    l4.next.next = new ListNode(8);
+    s.addTwoNumbers(l3, l4);
+  }
 }

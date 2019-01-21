@@ -1,13 +1,4 @@
 
-public class Container {
-
-  public static void main(String[] args) {
-    SolutionContainer s = new SolutionContainer();
-    System.out.println(s.maxArea(new int[] {2,3,4,5,18,17,6}));
-  }
-
-}
-
 class SolutionContainer {
 
   // Solution using two pointers
@@ -29,6 +20,15 @@ class SolutionContainer {
       }
     }
     return largestArea;
+  }
+}
+
+
+public class Container {
+
+  public static void main(String[] args) {
+    SolutionContainer s = new SolutionContainer();
+    System.out.println(s.maxArea(new int[] {2,3,4,5,18,17,6}));
   }
 
 }
